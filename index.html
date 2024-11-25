@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #121212; /* Dark background */
+            font-family: Arial, sans-serif;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .container h1 {
+            font-size: 4rem;
+            margin: 0;
+            color: #ffffff; /* Solid white for primary text */
+        }
+
+        .container p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: transparent;
+            background: linear-gradient(
+                90deg,
+                #ff8c00, /* Soft Orange */
+                #ff0080, /* Juicy Pink */
+                #8a2be2, /* Deep Purple */
+                #007fff, /* Bright Blue */
+                #00ff7f, /* Soft Green */
+                #ffdf00, /* Warm Yellow */
+                #ff8c00 /* Loop back to Orange */
+            );
+            background-size: 300%; /* Extend for smoother animation */
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            animation: gradient-text-animation 6s ease-in-out infinite;
+        }
+
+        @keyframes gradient-text-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Coming Soon</h1>
+        <p>Our website is under construction. Stay tuned for something amazing!</p>
+    </div>
+</body>
+
+</html>
